@@ -7,8 +7,11 @@ body{
 	font-family: 'Microsoft Yahei',Arial,sans-serif;
 	min-width: 1260px;
 	height: auto;
-	padding: 0px 30px;
+
 }
+
+
+/*导航栏*/
 #header{
 	background-color: rgb(51,51,51);
 	position: relative;
@@ -17,11 +20,9 @@ body{
 }
 
 .main-nav ul{
-	/*float: right;*/
 	position: absolute;
 	right:0px;
 	top:0px;list-style-position: inside;
-    /*display: inline-block;*/
 }
 .main-nav ul li{
 	float: left;
@@ -32,4 +33,120 @@ body{
 }
 .main-nav ul li a:visited{
 	color: #fff;
+}
+
+
+/*文章栏*/
+.border{
+	margin: 20px 80px;
+	padding: 20px 20px;
+	background-color: #fff;
+	border:1px solid rgb(205,205,205);
+	box-shadow: 1px 1px 1px 1px rgb(132,132,132);
+}
+.border h3{	
+	color: rgb(100,100,100);
+	margin: 0px 0px 20px 0px;
+}
+.writer{	
+	color: rgb(100,100,100);
+	margin: 0px 0px 20px 0px;
+	display: block;
+}
+.border h2{
+	margin: 20px 0px;
+}
+.border ul li,p{
+	text-indent:2em;margin: 0px 0px 20px 0px;
+}
+.border ul,.img{
+	margin: 0px 0px 20px 0px;list-style: none;
+}
+
+
+/*图片栏*/
+.border figure{
+	width: 150px;
+	border: 1px #ccc solid;
+	padding: 0px 10px 10px 10px;
+	text-align: center;
+	margin: 0px 0px 15px 60px;
+}
+.border figure figcaption{
+	text-align: center;
+	margin: 10px 0px;
+}
+.border figure img{
+	max-width: 100%;//important
+}
+.rank{
+	margin: 0px 0px 0px 40px;
+}
+.form{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+/*表格栏*/
+#table1{
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+#table1 th, td{
+	border: 0;
+	padding: 5px;
+	border: 1px #ccc solid;
+}
+#table1 th{
+	background-color: #333;
+	color: #fff;
+	text-align: left;
+}
+#table1 tfoot tr{
+	background-color: rgb(205,205,205);
+	font-weight: bold;
+}
+
+
+/*侧边栏*/
+.celan{
+	border-left:3px rgb(205,205,205) solid;
+	line-height: 2em;
+	padding-left: 10px; margin: 0;  
+}
+.input label{
+	width: 50%; display: inline-block;
+	text-align: right;
+	vertical-align:top;
+	margin-right: 10px;
+	margin-bottom:10px; 
+}
+.input input{
+	margin-bottom:10px;
+}
+.input button{
+	background: rgb(28, 99, 221);
+	line-height: 3em; 
+	border-radius: 8px; 
+	border: 0; outline: none; 
+	color: #fff; 
+	width: 100%;
+}
+.input p{
+	margin-left:48.5%;
+	color: #aaa; 
+}
+.border .input textarea{
+	width:400px;
+	height:100px;
+	margin-bottom: 10px;
+	resize: none;
+}
+footer{
+	background: rgb(0,0,0);
+	line-height: 4.5em;
+	color: #fff;
+	text-align: center;
 }

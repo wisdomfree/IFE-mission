@@ -21,43 +21,44 @@
 			</ul>
 		</nav>
 	</header>
-	<div>
+	<div class="border">
 		<h2>文章一级标题</h2>
-		<h2>文章二级标题</h2>
-		<p>文章作者 文章发表时间</p>
+		<h3>文章二级标题</h3>
+		<span class="writer">文章作者 文章发表时间</span>
 		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 			<br/>
 		   这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 			<br/>
 			这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
 		</p>
-		<figure>
+		<div class="img">
 			<img src="images/example.gif" alt="任务图片">
-		</figure>
+		</div>
 		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 			<br/>
 			这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
 	</div>
-	<div>
+	<div class="border">
 		<h2>另一篇文章一级标题</h2>
-		<h2>文章二级标题</h2>
-		<p>文章作者 文章发表时间</p>
+		<h3>文章二级标题</h3>
+		<span class="writer">文章作者 文章发表时间</span>
 		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 			<br/>
 		   这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 			<br/>
 			这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
 		</p>
-		<figure>
+		<div class="img">
 			<img src="images/example.gif" alt="任务图片">
-		</figure>
+		</div>
 		<ul>
 			<li>项目列表一</li>
 			<li>项目列表二</li>
 			<li>项目列表三</li>
 		</ul>
 	</div>
-	<div>
+	<div class="border">
+		<h2>图片</h2>
 		<figure>
 			<figcaption>好看的图片</figcaption>
 			<img src="images/example.gif" alt="任务图片">
@@ -99,17 +100,17 @@
 			<img src="images/example.gif" alt="任务图片">
 		</figure>
 	</div>
-	<div><!-- html5标签 -->
+	<div class="border"><!-- html5标签 -->
 		<h2>最后一篇文章一级标题</h2>
-		<h2>文章二级标题</h2>
-		<p>文章作者 文章发表时间</p>
-		<ol>
+		<h3>文章二级标题</h3>
+		<span class="writer">文章作者 文章发表时间</span>
+		<ol class="rank">
 			<li>排名1</li>
 			<li>排名2</li>
 			<li>排名3</li>
 		</ol>
-		<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
-		<table border="1">
+		<span class="form">下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</span>
+		<table border="1" id="table1">
 			<caption>表格标题</caption>
 			<thead>
 				<tr>
@@ -147,27 +148,38 @@
 				</tr>
 			</tfoot>
 		</table>
-	</div>	
-		<div><!-- 这里可用html5标签 aside-->
-			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-			<h2>侧栏注册窗口标题</h2>
+	</div>
+	<form>	
+		<div class="border"><!-- 这里可用html5标签 aside-->
+			<h3 class="celan">这里以后是一个侧栏，这是侧栏的标题</h3>
+		  <div class="input">
 			<label for="email" >请输入邮箱地址：</label>
-			<input type="text" value="这是一个文本框" id="email">
+			<input type="text" value="这是一个文本输入框" id="email">
 			<p>邮箱地址请要求格式输入</p>
 			<label for="pw1">请输入密码：</label><!-- 显式链接 -->
 			<input type="password" id="pw1">
-			<label for="pw2">请重复输入密码：<input type="password"></label><!-- 隐式链接 -->
+			<label for="pw2">请重复输入密码: </label><!-- 隐式链接 -->
+			<input type="password" id="pw2">
 			<p>密码请为6-16位英文数字</p>
-            <label><input type="radio" value="male" name="sex" checked="checked">男</label>
-             <label><input type="radio" value="male" name="sex">女</label>
+            <label>性别：</label>
+            <input type="radio" value="male" name="sex" checked="checked">男
+             <input type="radio" value="male" name="sex">女
+             <label>城市：</label>
              <select name="地址" id="none">
              	<option value="北京">北京</option>
              	<option value="上海">上海</option>
              	<option value="汕头" selected="selected">汕头</option>
              </select>
-             <label>爱好：<input type="checkbox">运动<input type="checkbox">艺术<input type="checkbox">科学</label>
+             <label>爱好：</label>
+             <input type="checkbox">运动<input type="checkbox">艺术<input type="checkbox">科学
+             <label>个人描述：</label>
              <textarea name="detail" id="detail" wrap="hard" title="describe">这是一个多行输入框，输入您的个人描述</textarea>
-             <input type="submit" value="确认提交">
+             <button type="submit" >确认提交
+         </div>
 		</div>
+	</form>
+		<footer>
+			版权所有&copy;
+		</footer>
 </body>
 </html>
