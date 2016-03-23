@@ -5,16 +5,12 @@
 body{
 	background-color: rgb(222,222,222);
 	font-family: 'Microsoft Yahei',Arial,sans-serif;
-	min-width: 1333px;
+	//min-width: 1333px;
 	height: auto;
 
 }
-
-
-/*导航栏*/
 #header{
 	background-color: rgb(51,51,51);
-	//position: relative;
 	width: 100%;
 	height: 80px;
 }
@@ -35,11 +31,22 @@ body{
 .main-nav ul li a:visited{
 	color: #fff;
 }
-
+div.box{
+	position: relative;
+}
+div.left{
+	margin-right: 390px;
+	/*min-width: 350px;*/
+}
+div.right{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 
 /*文章栏*/
 .border{
-	margin: 20px 80px;
+	margin: 20px 20px;
 	padding: 20px 20px;
 	background-color: #fff;
 	border:1px solid rgb(205,205,205);
@@ -71,7 +78,8 @@ body{
 	border: 1px #ccc solid;
 	padding: 0px 10px 10px 10px;
 	text-align: center;
-	margin: 0px 0px 15px 60px;
+	margin: 0px 0px 15px 20px;
+	display: inline-block;
 }
 .border figure figcaption{
 	text-align: center;
@@ -112,10 +120,20 @@ body{
 
 
 /*侧边栏*/
+.sidebar{
+	margin: 0px 20px 0px 0px;
+	padding: 20px 20px;
+	background-color: #fff;
+	border:1px solid rgb(205,205,205);
+	box-shadow: 1px 1px 1px 1px rgb(132,132,132);
+}
+form{
+	width: 389px;
+}
 .celan{
 	border-left:3px rgb(205,205,205) solid;
-	line-height: 2em;
-	padding-left: 10px; margin: 0;  
+	//line-height: 2em;
+	padding:10px; margin: 0;  
 }
 .input label{
 	width: 50%; display: inline-block;
@@ -138,9 +156,10 @@ body{
 .input p{
 	margin-left:48.5%;
 	color: #aaa; 
+	font-size: 12px;
 }
-.border .input textarea{
-	width:400px;
+.sidebar .input textarea{
+	width:40%;
 	height:100px;
 	margin-bottom: 10px;
 	resize: none;
