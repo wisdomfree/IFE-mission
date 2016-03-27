@@ -1,0 +1,95 @@
+table thead th{
+	background-color: #000000;
+	color: #ffffff;
+	text-align: left;
+}
+table tbody tr:nth-child(odd){
+	background-color: #CCCCCC;
+}
+table tbody tr:nth-child(1){
+	color: red;
+}
+table tbody tr:nth-child(2){
+	color: red;
+}
+table tbody tr:nth-child(3){
+	color: red;
+}
+.text{
+	width: 150px;
+	transition:0.5s width;
+}
+.text:focus{
+	width: 250px;
+	border: 2px solid #0098CD;
+	/*box-shadow: rgba(112,200,255,0.8);*/
+	border-radius:2px; 
+}
+.banner{ 
+     position: relative; 
+     width: 300px; 
+     overflow: hidden; 
+     margin-top: 50px; 
+ } 
+ 
+ 
+ .banner-container{ 
+     width: 300%; 
+     height: 100%; 
+     position: relative; 
+     left: 0; 
+     transition: 0.5s left; 
+     font-size: 0; 
+     word-spacing: 0; 
+     letter-spacing: 0;
+     padding-left:0px;  
+ } 
+.banner-container li{ 
+     display: inline-block; 
+     list-style: none; 
+     width: 300px; 
+     height: 100px; 
+ } 
+ .banner-container li:nth-child(1){ 
+     background-color: #00f; 
+ } 
+ .banner-container li:nth-child(2){ 
+     background-color: #0f0; 
+ } 
+ .banner-container li:nth-child(3){ 
+     background-color: #f00; 
+ } 
+ 
+ 
+ .banner-controller{ 
+     position: absolute; 
+     right: 0; 
+     bottom: 0; 
+ } 
+ 
+ 
+ .banner-controller a{ 
+     text-decoration: none; 
+     display: inline-block; 
+     width: 28px; 
+     height: 28px; 
+     line-height: 28px; 
+     font-size: 16px; 
+     background-color: rgba(255,255,255,0.5); 
+     text-align: center; 
+     color: #fff; 
+ } 
+ .banner-controller a:visited{ 
+     color: #fff; 
+ } 
+ 
+ 
+ #img1:target~.banner-container{ 
+     left: 0; 
+ } 
+ #img2:target~.banner-container{ 
+     left: -100%; 
+ } 
+ #img3:target~.banner-container{ 
+     left: -200%; 
+ } 
