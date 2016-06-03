@@ -1,0 +1,11 @@
+
+#queue .block{
+	display: inline-block;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	width: auto;
+	height: 20px;
+	margin: 2px;
+	padding: 2px;
+}

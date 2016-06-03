@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task19</title>
+	<style type="text/css">
+
+/*#queue .block{
+	display: inline-block;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	width: auto;
+	height: 20px;
+	margin: 2px;
+	padding: 2px;
+}*/
+#queue{
+	border:2px solid #bbb;
+	width: 80%; 
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    align-content:center;
+    margin: 10px auto; 
+    padding: 10px;
+}
+.block{
+	background-color:red;
+	color:white;
+	text-align:center;
+	margin:0 1px;
+	width: 25px;
+	font-size: 15px;
+}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<input type="text" id="texts">
+		<input type="button" class="buttons" value="左侧入">
+		<input type="button" class="buttons" value="右侧入">
+		<input type="button" class="buttons" value="左侧出">
+		<input type="button" class="buttons" value="右侧出">
+		<input type="button" id="random" value="随机生成数据">
+		<input type="button" id="bubbleSort" value="冒泡排序">
+	</div>
+	<div id="queue">
+
+	</div>
+ <script src="js/task19.js"></script>
+</body>
+</html>

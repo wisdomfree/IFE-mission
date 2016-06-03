@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task21</title>
+	<style>
+	#inputs{
+		width: 250px;
+	}
+	#inputs:focus{
+	   	    border: 2px solid #0098CD;
+	        /*box-shadow: rgba(112,200,255,0.8);*/
+	        border-radius:2px; 
+        }
+		textarea{
+			width:300px;
+			height: 50px;
+		}
+		#list2 ul{
+			list-style: none;
+			overflow: hidden;
+			display: flex;
+			justify-content: flex-start;
+			align-items:flex-end;
+		}
+		#list2 li{
+			display: inline-block;
+			margin: .5%;
+			background-color: #FFCA8A;
+			color: white;
+			font-weight: bold;
+			padding: .5%;
+		}
+		#submit{
+			border: 1px solid #000;
+			border-radius:4px; 
+		}
+		#text{
+			display: block;
+			margin: 10px 0px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<label for="input">Tag:</label>
+	<input type="text" name="inputs" id="inputs" placeholder="输入空格，逗号，回车时自动放入tag。">
+	<ul id="list1">
+	</ul>
+	</div>
+	<div>
+	<textarea id="text" placeholder="输入内容为数字、中文、英文等，可通过回车、逗号、顿号、空格等符号作为间隔"></textarea>
+	<button type="button" id="submit">确认兴趣爱好</button>
+	<ul id="list2">
+	</ul>
+	</div>
+	<script src = "js/task21.js"></script>
+</body>
+</html>

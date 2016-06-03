@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task20</title>
+<style type="text/css">
+#queue .block{
+	display: inline-block;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	width: auto;
+	height: 20px;
+	margin: 2px;
+	padding: 2px;
+}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<textarea id="text" placeholder="输入的内容可通过回车、逗号、顿号、空格等符号作为间隔"></textarea>
+		<input type="button" class="buttons" value="左侧入">
+		<input type="button" class="buttons" value="右侧入">
+		<input type="button" class="buttons" value="左侧出">
+		<input type="button" class="buttons" value="右侧出">
+		<input type="text" id="searchText">
+		<input type="button" id="searchBtn" value="查询">
+	</div>
+	<div id="queue">
+	</div>
+	<script src="js/task20.js"></script>
+</body>
+</html>
